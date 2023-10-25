@@ -29,3 +29,26 @@ function changeImage() {
   function restoreImage2() {
     document.getElementById('myImage2').src = '野球観戦.jpeg';
   }
+
+ // ページの一番上にゆっくりスクロールする関数
+function scrollToTop() {
+    const targetPosition = 0;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000; // アニメーションの期間（ミリ秒）
+  
+    let start = null;
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = (timestamp - start) / duration;
+      window.scrollTo(0, startPosition + distance * progress);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    }
+  
+    window.requestAnimationFrame(step);
+  }
+  
+  // ボタンをクリックしたときにページを上にゆっくりスクロール
+  document.getElementById("scrollToTopButton").addEventListener("click", scrollToTop);
