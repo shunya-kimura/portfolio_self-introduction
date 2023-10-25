@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="./ファビコン.jpeg">
+</head>
+<body>
+    <!-- header -->
+<header>
+    <h1 class="headline">
+      <a class="title">自己紹介のサイト</a>
+    </h1>
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <a href="./index.html" class="text-primary">Home</a>
+      </li>
+      <li class="nav-list-item"><a href="./show.html" class="text-primary">About</a></li>
+    </ul>
+  </header>
+
+    <div class="container mt-5 col-md-10">
+        <div class="row justify-content-center border">
+        <div class="col-md-6">
+            <h2 class="mt-4"><strong>木村 駿也(きむら しゅんや)</strong></h2>
+            <ul class="mt-4"><h3 class="mb-3"><strong>プロフィール</strong></h3>
+                <li>生年月日:1994年1月24日生まれ</li>
+                <li>年齢:29歳</li>
+                <li>出身:大阪府堺市出身</li>
+            </ul>
+            <ul class="mt-5 mb-3"><h3><strong>連絡先</strong></h3>
+                <li>メールアドレス:kimura.shunya@seedtech.co.jp</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <img src="./顔写真.png" class="img-fluid mt-3 mb-3" alt="顔写真">
+        </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 border">
+            <div class="col-md-10">
+            <h3 class="mt-4"><strong>経歴</strong></h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>期間</th>
+                        <th>経歴の説明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2016年3月</td>
+                        <td>桃山学院大学を卒業</td>
+                    </tr>
+                    <tr>
+                        <td>2016年4月 - 2019年8月</td>
+                        <td>株式会社ヒガシトゥエンティワンにて勤務</td>
+                    </tr>
+                    <tr>
+                        <td>2020年10月 - 2023年9月</td>
+                        <td>古着の販売をメインに個人事業主として活動</td>
+                    </tr>
+                    <tr>
+                        <td>2023年10月 -</td>
+                        <td>シードテック株式会社に入社</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+            <a href="./show.html" class="text-primary">詳しい経歴はこちらから！</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 border">
+            <div class="col-md-10 mt-4"><h3><strong>趣味</strong></h3></div>
+            <div class="col-md-6">
+                <h5 class="mb-3 mt-5"><strong>野球観戦</strong></h5>
+                <p>好きな球団は読売ジャイアンツで好きな選手は坂本勇人選手です。<br>試合に関しては年に数回現地で観に行ってます。<br>京セラドームで観戦することが多く、<br>オリックスバファローズの試合も行くことがあります。</p>
+            </div>
+            <div class="col-md-4">
+                <img id="myImage2" src="野球観戦.jpeg" class="img-fluid" onmouseover="changeImage2()" onmouseout="restoreImage2()">
+            </div>
+            <div class="col-md-10 border mt-3 mb-3"></div>
+            <div class="col-md-4 order-md-1">
+                <img id="myImage" src="ゲーム.jpeg" class="img-fluid" onmouseover="changeImage()" onmouseout="restoreImage()">
+            </div>
+            <div class="col-md-6 order-md-2 mb-4">
+                <h5 class="mb-3 mt-5"><strong>ゲーム</strong></h5>
+                <p>基本的にPS5をよくプレイしています。<br>今一番好きなのはファイナルファンタジー7です。<br>新作も楽しみです。</p><button id="action">自慢</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+  <footer class="mt-4">
+    <p>© All rights reserved by kimurashunyadaze.</p>
+   </footer>
+
+
+     <script src="app.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html>
